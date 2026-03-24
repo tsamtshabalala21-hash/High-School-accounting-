@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High School Accounting - Grade 12</title>
+<style>
+body { font-family: Arial, sans-serif; background:#f9f9f9; margin:0; padding:0 20px; }
+header { background:#1e3d59; color:white; padding:20px 0; text-align:center; }
+h1,h2,h3 { color:#1e3d59; }
+section { background:white; padding:20px; margin:20px 0; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+img { max-width:100%; height:auto; display:block; margin:10px 0; }
+.example, .question, .case-study { background:#f1f5f9; padding:15px; margin:15px 0; border-left:5px solid #1e3d59; cursor:pointer; }
+.answer { background:#d1fae5; padding:10px; margin-top:10px; border-left:5px solid #059669; display:none; }
+table { width:100%; border-collapse:collapse; margin:15px 0; }
+table, th, td { border:1px solid #ccc; }
+th, td { padding:10px; text-align:left; }
+th { background:#1e3d59; color:white; }
+.glossary-term { font-weight:bold; }
+footer { text-align:center; padding:15px; color:#555; }
+button { background:#1e3d59; color:white; border:none; padding:10px 20px; margin:10px 0; border-radius:5px; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>High School Accounting</h1>
+<p>Grade 12 Study Guide | Interactive & Exam-Ready</p>
+<button onclick="generatePDF()">Download PDF</button>
+</header>
+
+<section id="introduction">
+<h2>Introduction to Accounting</h2>
+<p>Accounting records, summarizes, and analyzes financial transactions. It helps stakeholders make informed business decisions.</p>
+<img src="images/accounting-intro.jpg" alt="Accounting overview">
+</section>
+
+<section id="basic-concepts">
+<h2>Basic Accounting Concepts</h2>
+<ul>
+<li><strong>Assets:</strong> Resources owned by the business.</li>
+<li><strong>Liabilities:</strong> Obligations owed to others.</li>
+<li><strong>Equity:</strong> Owner's interest.</li>
+<li><strong>Revenue:</strong> Money earned.</li>
+<li><strong>Expenses:</strong> Costs incurred.</li>
+</ul>
+<img src="images/basic-concepts.jpg" alt="Accounting concepts">
+</section>
+
+<section id="financial-statements">
+<h2>Financial Statements</h2>
+<h3>Income Statement</h3>
+<p>Shows revenue and expenses to calculate net profit.</p>
+<div class="example"><strong>Example:</strong> Revenue R50,000; Expenses R30,000 → Net Profit = R20,000</div>
+<h3>Balance Sheet</h3>
+<p>Shows financial position: Assets = Liabilities + Equity</p>
+<div class="example"><strong>Example:</strong> Assets R100,000; Liabilities R60,000 → Equity = R40,000</div>
+<h3>Cash Flow Statement</h3>
+<p>Shows cash inflows/outflows from operations, investments, and financing.</p>
+</section>
+
+<section id="journal-entries">
+<h2>Journal Entries</h2>
+<div class="example"><strong>Example:</strong> Bought office supplies R1,000 cash → Debit Office Supplies R1,000; Credit Cash R1,000</div>
+</section>
+
+<section id="practice-questions">
+<h2>Practice Questions (Click to Reveal Answers)</h2>
+<div class="question"><strong>Q1:</strong> A business sold goods worth R120,000 and had expenses of R85,000. Calculate net profit.
+<div class="answer"><strong>Answer:</strong> Net Profit = R120,000 - R85,000 = R35,000</div></div>
+<div class="question"><strong>Q2:</strong> Assets = R250,000; Liabilities = R150,000. Find equity.
+<div class="answer"><strong>Answer:</strong> Equity = R250,000 - R150,000 = R100,000</div></div>
+<div class="question"><strong>Q3:</strong> Current Assets R80,000; Inventory R20,000; Current Liabilities R40,000. Find Acid Test Ratio.
+<div class="answer"><strong>Answer:</strong> (80,000-20,000)/40,000 = 1.5</div></div>
+</section>
+
+<section id="case-studies">
+<h2>Real-Life Case Studies (Click to Reveal Solutions)</h2>
+<div class="case-study"><strong>Case Study 1:</strong> XYZ Ltd started trading. Bought inventory R50,000 cash; sold goods R70,000 credit; paid expenses R20,000. Prepare Income Statement.
+<div class="answer"><strong>Solution:</strong> Revenue = 70,000; Expenses = 20,000 + Cost of Goods Sold 50,000 = 70,000 → Net Profit = 0</div></div>
+<div class="case-study"><strong>Case Study 2:</strong> ABC Ltd purchased equipment R10,000 on credit. Paid R2,000 for utilities. Prepare Journal Entries.
+<div class="answer"><ul><li>Debit Equipment R10,000; Credit Accounts Payable R10,000</li><li>Debit Utilities Expense R2,000; Credit Cash R2,000</li></ul></div></div>
+<div class="case-study"><strong>Case Study 3:</strong> Business has Assets R200,000; Liabilities R120,000; Revenue R80,000; Expenses R50,000. Prepare Balance Sheet & calculate Net Profit.
+<div class="answer"><strong>Solution:</strong> Equity = 200,000-120,000 = 80,000; Net Profit = 80,000-50,000 = 30,000</div></div>
+</section>
+
+<section id="formula-cheat-sheet">
+<h2>Accounting Formula Cheat Sheet</h2>
+<table>
+<thead><tr><th>Formula</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>Assets = Liabilities + Equity</td><td>Balance Sheet equation</td></tr>
+<tr><td>Net Profit = Revenue - Expenses</td><td>Income Statement profit</td></tr>
+<tr><td>Equity = Assets - Liabilities</td><td>Owner's interest</td></tr>
+<tr><td>Gross Profit = Sales - Cost of Sales</td><td>Profit before expenses</td></tr>
+<tr><td>Mark-up % = (Gross Profit ÷ Cost of Sales) × 100</td><td>Profit percentage</td></tr>
+<tr><td>Current Ratio = Current Assets ÷ Current Liabilities</td><td>Liquidity measure</td></tr>
+<tr><td>Acid Test Ratio = (Current Assets - Inventory) ÷ Current Liabilities</td><td>Short-term liquidity</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="glossary">
+<h2>Glossary of Accounting Terms</h2>
+<p><span class="glossary-term">Assets:</span> Resources owned by the business.</p>
+<p><span class="glossary-term">Liabilities:</span> Obligations owed to outsiders.</p>
+<p><span class="glossary-term">Equity:</span> Owner's interest in the business.</p>
+<p><span class="glossary-term">Revenue:</span> Money earned from business activities.</p>
+<p><span class="glossary-term">Expenses:</span> Costs incurred to generate revenue.</p>
+<p><span class="glossary-term">Net Profit:</span> Revenue minus expenses.</p>
+</section>
+
+<footer>
+<p>High School Accounting Study Guide | Grade 12 | Created for Learning Purposes</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+// Toggle answers
+const items = document.querySelectorAll('.question, .case-study, .example');
+items.forEach(i => {
+    i.addEventListener('click', () => {
+        const answer = i.querySelector('.answer');
+        if(answer) answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+// Generate PDF
+function generatePDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF('p','pt','a4');
+    doc.html(document.body, {
+        callback: function(pdf) {
+            pdf.save("HighSchool_Accounting_Grade12.pdf");
+        },
+        x:10,
+        y:10,
+        width:575
+    });
+}
+</script>
+
+</body>
+  </html>
