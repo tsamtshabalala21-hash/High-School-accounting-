@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High School Accounting - Grade 12</title>
+
+<style>
+body { font-family: Arial; background:#f4f6f8; margin:0; padding:0 20px; }
+header { background:#1e3d59; color:white; text-align:center; padding:20px; }
+h1,h2,h3 { color:#1e3d59; }
+section { background:white; padding:20px; margin:20px 0; border-radius:10px; }
+.question, .case { background:#eef2f7; padding:15px; margin:10px 0; cursor:pointer; border-left:5px solid #1e3d59; }
+.answer { display:none; background:#d1fae5; padding:10px; margin-top:10px; }
+button { background:#1e3d59; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer; margin:5px; }
+table { width:100%; border-collapse:collapse; }
+th, td { border:1px solid #ccc; padding:10px; }
+th { background:#1e3d59; color:white; }
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>High School Accounting</h1>
+<p>Grade 12 Complete Study Guide</p>
+
+<!-- PDF DOWNLOAD -->
+<a href="HighSchool_Accounting_Grade12.pdf" download>
+<button>Download Study Guide PDF</button>
+</a>
+
+<!-- OPTIONAL GENERATE PDF -->
+<button onclick="generatePDF()">Generate PDF</button>
+
+</header>
+
+<section>
+<h2>Accounting Basics</h2>
+<p>Accounting is recording, summarizing and analyzing financial transactions.</p>
+<ul>
+<li>Assets = what the business owns</li>
+<li>Liabilities = what the business owes</li>
+<li>Equity = owner's interest</li>
+</ul>
+</section>
+
+<section>
+<h2>Financial Statements</h2>
+<h3>Income Statement</h3>
+<p>Net Profit = Revenue - Expenses</p>
+
+<h3>Balance Sheet</h3>
+<p>Assets = Liabilities + Equity</p>
+</section>
+
+<section>
+<h2>Practice Questions</h2>
+
+<div class="question">
+Q1: Revenue R100,000, Expenses R60,000. Find profit.
+<div class="answer">Answer: R40,000</div>
+</div>
+
+<div class="question">
+Q2: Assets R200,000, Liabilities R120,000.
+<div class="answer">Answer: Equity = R80,000</div>
+</div>
+
+<div class="question">
+Q3: Current Assets R80,000, Inventory R20,000, Liabilities R40,000.
+<div class="answer">Answer: Acid Test = 1.5</div>
+</div>
+
+</section>
+
+<section>
+<h2>Case Studies</h2>
+
+<div class="case">
+Case 1: Bought stock R50,000, sold R70,000, expenses R20,000.
+<div class="answer">Net Profit = 0</div>
+</div>
+
+<div class="case">
+Case 2: Equipment R10,000 on credit.
+<div class="answer">Debit Equipment, Credit Payables</div>
+</div>
+
+</section>
+
+<section>
+<h2>Formula Cheat Sheet</h2>
+
+<table>
+<tr><th>Formula</th><th>Description</th></tr>
+<tr><td>Assets = Liabilities + Equity</td><td>Balance equation</td></tr>
+<tr><td>Net Profit = Revenue - Expenses</td><td>Profit</td></tr>
+<tr><td>Current Ratio = CA / CL</td><td>Liquidity</td></tr>
+<tr><td>Acid Test = (CA - Inventory) / CL</td><td>Quick liquidity</td></tr>
+</table>
+
+</section>
+
+<section>
+<h2>Glossary</h2>
+<p><b>Assets:</b> Resources owned</p>
+<p><b>Liabilities:</b> Debts</p>
+<p><b>Equity:</b> Owner interest</p>
+<p><b>Revenue:</b> Income</p>
+<p><b>Expenses:</b> Costs</p>
+</section>
+
+<script>
+// Toggle answers
+document.querySelectorAll('.question, .case').forEach(item => {
+    item.addEventListener('click', () => {
+        let ans = item.querySelector('.answer');
+        ans.style.display = ans.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+// PDF Generator
+function generatePDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    doc.text("High School Accounting Study Guide", 10, 10);
+    doc.save("HighSchool_Accounting_Grade12.pdf");
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>
